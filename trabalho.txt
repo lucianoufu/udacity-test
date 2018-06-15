@@ -1,0 +1,61 @@
+8º trabalho de ITC 
+ 
+Nome: Luciano Soares Nascimento 
+Nº: 118111ECP024 
+ 
+1) Fazer um programa que defina duas estruturas, sendo uma de endereço (rua, número, cep, bairro) e outra de cadastro de pessoas (nome, telefone, idade e endereço (estrutura aninhada)). O programa deverá permitir cadastrar uma pessoa e em seguida mostrar os dados na tela. 
+.OBS: 
+A) Declarar a variável do tipo estrutura no main(). 
+B) Esta questão usa estrutura aninhada. 
+C) É para ultilizar duas funções, sendo uma pra cadastrar  e outra para mostrar os dados na tela. 
+ 
+ 
+#include<conio.h> 
+#include<stdio.h> 
+struct end 
+{ 
+ char rua[200]; 
+ int numero; 
+ int cep; 
+ char bairro[100]; 
+}; 
+struct pes 
+{ 
+ char nome [200]; 
+ int telefone; 
+ int idade; 
+ end end_pes; 
+}; 
+pes cadastro() 
+{ 
+ pes x; 
+ printf("Digite o nome da rua: "); 
+ fflush(stdin); 
+ gets(x.end_pes.rua); 
+ printf("digite o numero da casa: "); 
+ scanf("%i", &x.end_pes.numero); 
+ printf("digite o cep: "); 
+ scanf("%i", &x.end_pes.cep); 
+ printf("digite o bairro: "); 
+ fflush(stdin); 
+ gets(x.end_pes.bairro); 
+ printf("digite o nome da pessoa: "); 
+ fflush(stdin); 
+ gets(x.nome); 
+ printf("digite o telefone e a idade da pessoa respectivamente: "); 
+ scanf("%i%i", &x.telefone, &x.idade); 
+ return x; 
+} 
+void mostrar(pes y) 
+{ 
+ printf("Os dados da pessoa cadastrada sao:\n\n"); 
+ printf("Nome: %s\nTelefone: %i\nIdade:%i\nRua:%s\nNumero:%i\nCep:%i\nBairro:%s\n",y.nome,y.telefone,y.idade,y.end_pes.rua,y.end_pes.numero,y.end_pes.cep,y.end_pes.bairro); 
+} 
+int main() 
+{ 
+ pes y; 
+ y= cadastro(); 
+ mostrar(y); 
+ getch(); 
+ return 0; 
+} 
