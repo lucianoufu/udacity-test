@@ -1,13 +1,13 @@
-8º trabalho de ITC 
+8Âº trabalho de ITC 
  
 Nome: Luciano Soares Nascimento 
-Nº: 118111ECP024 
+NÂº: 118111ECP024 
  
-1) Fazer um programa que defina duas estruturas, sendo uma de endereço (rua, número, cep, bairro) e outra de cadastro de pessoas (nome, telefone, idade e endereço (estrutura aninhada)). O programa deverá permitir cadastrar uma pessoa e em seguida mostrar os dados na tela. 
+1) Fazer um programa que defina duas estruturas, sendo uma de endereÃ§o (rua, nÃºmero, cep, bairro) e outra de cadastro de pessoas (nome, telefone, idade e endereÃ§o (estrutura aninhada)). O programa deverÃ¡ permitir cadastrar uma pessoa e em seguida mostrar os dados na tela. 
 .OBS: 
-A) Declarar a variável do tipo estrutura no main(). 
-B) Esta questão usa estrutura aninhada. 
-C) É para ultilizar duas funções, sendo uma pra cadastrar  e outra para mostrar os dados na tela. 
+A) Declarar a variÃ¡vel do tipo estrutura no main(). 
+B) Esta questÃ£o usa estrutura aninhada. 
+C) Ã‰ para ultilizar duas funÃ§Ãµes, sendo uma pra cadastrar  e outra para mostrar os dados na tela. 
  
  
 #include<conio.h> 
